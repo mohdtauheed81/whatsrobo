@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init:*)",
+      "Bash(else echo \"❌ node_modules NOT found - need to run npm install\")",
+      "Bash(test:*)",
+      "Bash(redis-server:*)",
+      "Bash(where:*)",
+      "Bash(\"F:/git_repo/SaaSWhatsapp/SYSTEM_STATUS.txt\":*)",
+      "Bash(\"F:/git_repo/SaaSWhatsapp/CHANGES_SUMMARY.txt\":*)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiI2OTllZTIzZmNiMThjN2VlMmNmNDE1MGUiLCJlbWFpbCI6ImVuZHRlc3QxNzcyMDIwMjg2QHRlc3QuY29tIiwiaWF0IjoxNzcyMDIwMjg3LCJleHAiOjE3NzI2MjUwODd9.7WYV0-judMP8rLHkVQ_1EDUfNbZ86bF8geI4I-ImG08\")",
+      "Bash(F:/git_repo/SaaSWhatsapp/QUICK_START.md:*)",
+      "Bash(for:*)",
+      "Bash(do sleep 1)",
+      "Bash(/F/git_repo/SaaSWhatsapp/src/models/AutoReplyRule.js:*)",
+      "Bash(/F/git_repo/SaaSWhatsapp/src/routes/autoreply.routes.js:*)",
+      "Bash(/F/git_repo/SaaSWhatsapp/client/src/redux/autoreplySlice.js:*)",
+      "Bash(/F/git_repo/SaaSWhatsapp/client/src/styles/autoreply.css:*)",
+      "Bash(cmd.exe /c \"taskkill /PID 1296 /F\")",
+      "Bash(cmd.exe /c \"netstat -ano | findstr :5000\")",
+      "Bash(npm install passport passport-google-oauth20 passport-jwt --save)",
+      "Bash(npm install --save-dev jest supertest)",
+      "Bash(npm install swagger-jsdoc swagger-ui-express --save)",
+      "Bash(cmd /c \"taskkill /F /PID 18236\")",
+      "Bash(powershell -Command \"Stop-Process -Id 18236 -Force -ErrorAction SilentlyContinue; Start-Sleep 1; \\(Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue\\).OwningProcess\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | Sort-Object -Unique\")"
+    ]
+  }
+}

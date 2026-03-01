@@ -1,0 +1,92 @@
+.invoices-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: var(--text-secondary);
+}
+
+.invoices-table {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--light-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+tbody tr:hover {
+  background-color: var(--light-bg);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-state svg {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 12px;
+  }
+}

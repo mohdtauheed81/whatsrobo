@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+.env
+.env.*
+!.env.example
+sessions/
+uploads/
+logs/
+coverage/
+.git
+.gitignore
+*.md
+tests/
+jest.config.js
+.eslintrc.json
+docker-compose.yml
+Dockerfile

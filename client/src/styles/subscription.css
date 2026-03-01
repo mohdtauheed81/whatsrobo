@@ -1,0 +1,198 @@
+.subscription-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: var(--text-secondary);
+}
+
+.current-plan {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.current-plan h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.current-plan p {
+  margin: 8px 0 0 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.plan-card {
+  background-color: white;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.plan-card.active {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(7, 94, 84, 0.1);
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.plan-card h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.period {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.features {
+  margin-bottom: 24px;
+}
+
+.features h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.features ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.features svg {
+  color: var(--secondary-color);
+  flex-shrink: 0;
+}
+
+.usage-stats {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+}
+
+.usage-stats h2 {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 20px;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-card h4 {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Plan Badge */
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Plan description */
+.plan-description {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+/* stat-limit */
+.stat-limit {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .current-plan {
+    flex-direction: column;
+    text-align: center;
+  }
+}

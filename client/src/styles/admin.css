@@ -1,0 +1,315 @@
+.admin-dashboard,
+.admin-companies,
+.admin-plans {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.admin-header p {
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-content h3 {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Charts */
+.admin-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.chart-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.chart-card h3 {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.chart-placeholder {
+  height: 300px;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Admin Table */
+.table-responsive {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background-color: var(--light-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.admin-table tbody tr:hover {
+  background-color: var(--light-bg);
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Plans Grid */
+.plans-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.plan-admin-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.plan-admin-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.plan-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.plan-details {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.plan-details p {
+  margin: 8px 0;
+}
+
+.plan-features {
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: var(--light-bg);
+  border-radius: 6px;
+}
+
+.plan-features strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.plan-features ul {
+  list-style: none;
+  font-size: 13px;
+}
+
+.plan-features li {
+  margin: 4px 0;
+  color: var(--text-secondary);
+}
+
+.plan-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.plan-actions button {
+  flex: 1;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+/* stat-sub (secondary stats) */
+.stat-sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Quick Links */
+.admin-quick-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Company detail modal */
+.company-detail p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Search bar form submit button */
+.search-bar .btn-secondary {
+  padding: 6px 16px;
+  white-space: nowrap;
+}
+
+/* Actions column */
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-charts {
+    grid-template-columns: 1fr;
+  }
+
+  .plans-admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table {
+    font-size: 12px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 12px;
+  }
+}
